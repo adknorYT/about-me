@@ -3,7 +3,7 @@ Done by Konrad Korpik
 ---------------------
 Location:
 C:\Users\Admin\Desktop\Site\Project-Me\0_Files\Code\CSS\0_Main\StyleSheet.css
-https://github.com/adknorYT/about-me/blob/master/StyleSheet.css/
+*/
 @import url(https://fonts.googleapis.com/css?family=Lato);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
 
@@ -39,8 +39,7 @@ visibility: visible;
 div.all {
  display: block;
  width: 100%;
- height: auto;
- mim-height: 100%;
+ height: 100%;
  visibility: visible;
 }
 div.left {
@@ -250,34 +249,10 @@ p.about {
  background-color: #e64a41;
  visibility: visible;
 }
-
-@media screen and (max-width: 480px) {
- body {
-  background-color: #333;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  overflow-x: hidden;
-  visibility: visible;
-  -webkit-font-smoothing: antialiased;
- }
- #conteiner {
-  visibility: hidden;
- }
- #interactive {
-  visibility: hidden;
- }
- .div-all {
+@media only screen and (max-width: 480px) {
+ div.left {
   display: block;
   width: 100%;
-  max-width: 100%;
-  height: auto;
-  min-height: 100%;
-  visibility: visible;
- }
- .div-left {
-  display: block;
-  width: 100%;
-  max-width: 100%;
   height: auto;
   min-height: 100%;
   position: absolute;
@@ -286,18 +261,7 @@ p.about {
   background-color: #D8D8D8;
   visibility: visible;
  }
- .div-right {
-  width: 0%;
-  max-width: 0%;
-  visibility: hidden;
- }
- .div-text {
-  display: block;
-  width: 100%;
-  max-width: 100%;
-  background-color: #333;
-  clip-path: polygon(0% 0%, 100% 25%, 100% 100%, 0% 75%);
-  visibility: visible;
-  -webkit-clip-path: polygon(0% 0%, 100% 25%, 100% 100%, 0% 75%);
+ div.right {
+  display: none;
  }
 }
